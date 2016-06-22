@@ -1,4 +1,4 @@
-package adapter;
+package culturalDifferences;
 
 public class AustralianAdapterTest {
 	public static void main(String... args) {

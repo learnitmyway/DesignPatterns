@@ -1,4 +1,4 @@
-package adapter;
+package culturalDifferences;
 
 public class AustralianAdapter implements German {
 	Australian australian;

@@ -1,4 +1,4 @@
-package adapter;
+package culturalDifferences;
 
 public interface Australian {
 	void watchSport();

@@ -1,4 +1,4 @@
-package adapter;
+package culturalDifferences;
 
 public class GermanAdapterTest {
 	public static void main(String... args) {
