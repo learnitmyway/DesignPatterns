@@ -1,5 +1,6 @@
 package treasureHunt;
 
+import java.util.Arrays;
 import java.util.Iterator;
 
 public class Australia implements Country {
@@ -22,6 +23,6 @@ public class Australia implements Country {
 	}
 	
 	public Iterator<City> createIterator() {
-		return new AustraliaIterator(cities);
+		return Arrays.asList(cities).iterator();
 	}
 }
