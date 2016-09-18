@@ -1,32 +1,32 @@
 package treasureHunt;
 
-import java.util.ArrayList;
+import java.util.Iterator;
 
 public class TreasureHunter {
-
-	// TODO
-	public static void main(String[] args) {
-		Australia australia = new Australia();
-		City[] australianCities = australia.getCities();
+	private Australia australia;
+	private Usa usa;
+	
+	public TreasureHunter(Australia australia, Usa usa) {
+		this.australia = australia;
+		this.usa = usa;
+	}
+	
+	public void searchForTreasure() {
+		final Iterator<City> australiaIterator = australia.createIterator();
+		searchForTreasureInCountry(australiaIterator);
 		
-		for (City city : australianCities) {
+		Iterator<City> usaIterator = usa.createIterator();
+		searchForTreasureInCountry(usaIterator);
+	}
+
+	private void searchForTreasureInCountry(Iterator<City> countryIterator) {
+		while (countryIterator.hasNext()) {
+			final City city = countryIterator.next();
 			if (city.hasTreasure()) {
 				System.out.println("Found treasure in " + city.getName());
 			} else {
 				System.out.println("Found no treasure in " + city.getName());
 			}
 		}
-		
-		Usa usa = new Usa();
-		ArrayList<City> usaCities = usa.getCities();
-
-		for (City city : usaCities) {
-			if (city.hasTreasure()) {
-				System.out.println("Found treasure in " + city.getName());
-			} else {
-				System.out.println("Found no treasure in " + city.getName());
-			}
-		}
-
 	}
 }

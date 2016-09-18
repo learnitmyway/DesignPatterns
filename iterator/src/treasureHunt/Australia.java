@@ -1,6 +1,8 @@
 package treasureHunt;
 
-public class Australia {
+import java.util.Iterator;
+
+public class Australia implements Country {
 	
 	private static final int MAX_COUNT = 3;
 	private City[] cities;
@@ -19,7 +21,7 @@ public class Australia {
 		count++;
 	}
 	
-	public City[] getCities() {
-		return cities;
+	public Iterator<City> createIterator() {
+		return new AustraliaIterator(cities);
 	}
 }

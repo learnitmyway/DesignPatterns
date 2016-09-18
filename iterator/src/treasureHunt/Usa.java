@@ -1,8 +1,9 @@
 package treasureHunt;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
-public class Usa {
+public class Usa implements Country {
 
 	private ArrayList<City> cities;
 	
@@ -18,8 +19,8 @@ public class Usa {
 		City city = new City(cityName, hasTreasure);
 		cities.add(city);
 	}
-	
-	public ArrayList<City> getCities() {
-		return cities;
+
+	public Iterator<City> createIterator() {
+		return cities.iterator();
 	}
 }
