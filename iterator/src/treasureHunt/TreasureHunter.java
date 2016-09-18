@@ -5,10 +5,12 @@ import java.util.Iterator;
 public class TreasureHunter {
 	private Australia australia;
 	private Usa usa;
+	private Germany germany;
 	
-	public TreasureHunter(Australia australia, Usa usa) {
+	public TreasureHunter(Australia australia, Usa usa, Germany germany) {
 		this.australia = australia;
 		this.usa = usa;
+		this.germany = germany;
 	}
 	
 	public void searchForTreasure() {
@@ -17,6 +19,9 @@ public class TreasureHunter {
 		
 		Iterator<City> usaIterator = usa.createIterator();
 		searchForTreasureInCountry(usaIterator);
+
+		Iterator<City> germanyIterator = germany.createIterator();
+		searchForTreasureInCountry(germanyIterator);
 	}
 
 	private void searchForTreasureInCountry(Iterator<City> countryIterator) {

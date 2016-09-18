@@ -5,7 +5,8 @@ public class TreasureHunt {
 	public static void main(String[] args) {
 		Australia australia = new Australia();
 		Usa usa = new Usa();
-		TreasureHunter treasureHunter = new TreasureHunter(australia, usa);
+		Germany germany = new Germany();
+		TreasureHunter treasureHunter = new TreasureHunter(australia, usa, germany);
 		treasureHunter.searchForTreasure();
 	}
 }
