@@ -1,19 +1,23 @@
 package observer;
 
 public class Fan implements Observer {
-	private String name;
+	private final Subject blogger;
+	private final String name;
 	
-	public Fan(Blogger blogger, String name) {
-		blogger.registerObserver(this);
+	public Fan(Subject blogger, String name) {
+		this.blogger = blogger;
 		this.name = name;
+		this.blogger.registerObserver(this);
 	}
 
 	@Override
-	public void update(String message) {
-		displayMessage(message);
+	public void update() {
+		System.out.println(name + " reads the message");
 	}
 	
-	public void displayMessage(String message) {
-		System.out.println("Hey " + name + message);
+	@Override
+	public String getName() {
+		return name;
 	}
+
 }

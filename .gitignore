@@ -11,3 +11,4 @@ headfirst
 
 /* Files */
 .DS_Store
+.gitignore

@@ -3,13 +3,16 @@ package observer;
 import java.util.ArrayList;
 
 public class Blogger implements Subject {
-	private ArrayList<Observer> observers = new ArrayList<>();
-	private String message;
+	private final ArrayList<Observer> observers;
+	
+	public Blogger() {
+		observers = new ArrayList<>();
+	}
 
 	@Override
 	public void registerObserver(Observer observer) {
 		observers.add(observer);
-		System.out.println("Thanks for subscribing :)");
+		System.out.println(observer.getName() + " subscribes to the blog");
 	}
 
 	@Override
@@ -17,18 +20,19 @@ public class Blogger implements Subject {
 		int index = observers.indexOf(observer);
 		if (index >= 0) {
 			observers.remove(index);
+			System.out.println(observer.getName() + " unsubscribes from the blog");
 		}
-		System.out.println("Sorry to see you go :(");
 	}
 
 	@Override
 	public void notifyObservers() {
 		for (Observer observer : observers) {
-			observer.update(message);
+			observer.update();
 		}
 	}
-	
-	public void setMessage(String message) {
-		this.message = message;
+
+	public void displayMessage(String message) {
+		System.out.println(message);
 	}
+	
 }
