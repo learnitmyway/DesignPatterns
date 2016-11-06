@@ -5,12 +5,12 @@ public class SuperBurgersTest {
 		
 		System.out.println("The Super Chicken Burger:");
 		Burger chickenBurger = new ChickenBurger();
-		BurgerDecorator avocado = new Avocado(chickenBurger);
-		BurgerDecorator tomato = new Tomato(avocado);
-		System.out.println(tomato.getDescription() + " $" + tomato.getCost());
+		chickenBurger = new Avocado(chickenBurger);
+		chickenBurger = new Tomato(chickenBurger);
+		System.out.println(chickenBurger.getDescription() + " $" + chickenBurger.getCost());
 
 		System.out.println("The Super Beef Burger:");
-		BurgerDecorator bbqSauce = new BbqSauce(new Tomato(new BeefBurger()));
-		System.out.println(bbqSauce.getDescription() + " $" + bbqSauce.getCost());
+		final Burger beefBurger = new BbqSauce(new Tomato(new BeefBurger()));
+		System.out.println(beefBurger.getDescription() + " $" + beefBurger.getCost());
 	}
 }

@@ -1,6 +1,6 @@
 package superBurgers;
 
-public class Tomato extends BurgerDecorator {
+public class Tomato implements BurgerDecorator {
 	private Burger burger;
 	private static final String NAME = "Tomato";
 

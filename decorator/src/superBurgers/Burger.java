@@ -1,11 +1,7 @@
 package superBurgers;
 
-public abstract class Burger {
-	String description = "Unknown Burger";
-  
-	public String getDescription() {
-		return description;
-	}
+public interface Burger {
+	String getDescription();
  
-	public abstract double getCost();
+	double getCost();
 }

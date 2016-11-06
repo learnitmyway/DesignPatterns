@@ -1,6 +1,6 @@
 package superBurgers;
 
-public class BeefBurger extends Burger {
+public class BeefBurger implements Burger {
 
 	@Override
 	public String getDescription() {
