@@ -4,12 +4,12 @@ public class Harry implements Australian {
 
 	@Override
 	public void watchSport() {
-		System.out.println("Harry watches rugby");
+		System.out.println("Harry is watching rugby");
 	}
 
 	@Override
 	public void eatFavouriteFood() {
-		System.out.println("Harry loves eating avocado");
+		System.out.println("Harry loves his avocado");
 	}
 
 }
