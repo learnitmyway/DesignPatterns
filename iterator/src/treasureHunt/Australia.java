@@ -3,6 +3,7 @@ package treasureHunt;
 import java.util.Arrays;
 import java.util.Iterator;
 
+// Array
 public class Australia implements Country {
 	
 	private static final int MAX_COUNT = 3;

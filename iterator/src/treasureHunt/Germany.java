@@ -3,6 +3,7 @@ package treasureHunt;
 import java.util.HashMap;
 import java.util.Iterator;
 
+// Map
 public class Germany implements Country {
 	private HashMap<String, City> cities;
 	

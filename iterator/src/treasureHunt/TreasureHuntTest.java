@@ -1,6 +1,6 @@
 package treasureHunt;
 
-public class TreasureHunt {
+public class TreasureHuntTest {
 
 	public static void main(String[] args) {
 		Australia australia = new Australia();

@@ -3,6 +3,7 @@ package treasureHunt;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+// List
 public class Usa implements Country {
 
 	private ArrayList<City> cities;
