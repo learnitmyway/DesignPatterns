@@ -1,4 +1,4 @@
-package decorator.superBurgers;
+package decorator.superburgers;
 
 public interface Burger {
 	String getDescription();

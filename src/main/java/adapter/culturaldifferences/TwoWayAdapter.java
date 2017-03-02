@@ -1,4 +1,4 @@
-package adapter.culturalDifferences;
+package adapter.culturaldifferences;
 
 public class TwoWayAdapter implements Australian, German {
 	German german;

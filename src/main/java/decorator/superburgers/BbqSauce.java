@@ -1,4 +1,4 @@
-package decorator.superBurgers;
+package decorator.superburgers;
 
 public class BbqSauce implements BurgerDecorator {
 	private Burger burger;

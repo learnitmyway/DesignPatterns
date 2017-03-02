@@ -1,4 +1,4 @@
-package builder.compBuilder;
+package builder.compbuilder;
 
 /**
  * Created by David on 22/05/16.

@@ -1,4 +1,4 @@
-package decorator.superBurgers;
+package decorator.superburgers;
 
 public class SuperBurgersTest {
 	public static void main(String... args) {
