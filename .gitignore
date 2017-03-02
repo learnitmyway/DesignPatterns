@@ -1,14 +1,47 @@
-/* Folders */
-headfirst
-
 /* Extensions */
 .metadata
 *.recommenders
 *.settings
-*.class
 *.classpath
 *.project
 
 /* Files */
 .DS_Store
-.gitignore
+bin
+
+# Executables
+*.asp
+*.bat
+*.class
+*.cmd
+*.com
+*.cpl
+*.dll
+*.exe
+*.fon
+*.hta
+*.ini
+*.ins
+*.iw
+*.jar
+*.jsp
+*.js
+*.jse
+*.pif
+*.scr
+*.shs
+*.sh
+*.vb
+*.vbe
+*.vbs
+*.ws
+*.wsc
+*.wsf
+*.wsh
+*.msi
+
+/* Gradle */
+.gradle/
+build/
+gradle
+gradlew
