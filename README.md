@@ -1,7 +1,6 @@
 # Design Patterns
 The purpose of this repository is to practise design patterns with my own examples. Sources include:
-- [Design Patterns (GoF)] (https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented-ebook/dp/B000SEIBB8)
-- [Head First Design Patterns] (http://www.headfirstlabs.com/books/hfdp/)
+- [Head First Design Patterns](https://www.goodreads.com/book/show/58128.Head_First_Design_Patterns?from_search=true)
 - http://www.newthinktank.com/
 
 
